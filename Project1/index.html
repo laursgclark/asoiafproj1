@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones | Characters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="snow"></div>
+
+   <nav class="navbar">
+    <a href="index.html" class="nav-logo">Game of Thrones</a>
+
+    <div class="nav-links">
+        <a href="index.html" class="active">Characters</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="books.html">Books</a>
+    </div>
+</nav>
+
+    <main class="page-container">
+
+        <header class="page-header">
+            <h1>The Characters of Ice and Fire</h1>
+            <p>Explore the characters of Westeros and beyond.</p>
+        </header>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search characters, aliases or titles..."
+        >
+
+        <div class="character-filters">
+            <select id="house-filter">
+            <option value="">All Houses</option>
+            </select>
+
+             <select id="gender-filter">
+            <option value="">All Genders</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+             </select>
+         </div>  
+      
+        <p id="character-count"></p>
+
+        <div id="character-list">
+            <p>Loading characters...</p>
+        </div>
+
+    </main>
+
+    <dialog id="character-profile">
+
+        <button id="close-profile" type="button">
+            &times;
+        </button>
+
+        <div id="profile-content"></div>
+
+    </dialog>
+
+    <script src="characters.js"></script>
+
+</body>
+</html>
